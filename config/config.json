@@ -1,3 +1,4 @@
 {
-	"apiPrefix" : "/api/v1/"
+	"apiPrefix" : "/api/v1/",
+	"port"		: "8080"
 }
