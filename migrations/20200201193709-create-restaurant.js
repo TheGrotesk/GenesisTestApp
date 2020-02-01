@@ -13,13 +13,13 @@ module.exports = {
         allowNull : false
       },
       createdAt: {
-        allowNull: false,
-        type: Sequelize.DATE
-      },
-      updatedAt: {
-        allowNull: false,
-        type: Sequelize.DATE
-      }
+        type: Sequelize.DATE, 
+        default: new Date()
+			},
+			updatedAt: {
+        type: Sequelize.DATE, 
+        default: new Date()
+			}
     });
   },
   down: (queryInterface, Sequelize) => {

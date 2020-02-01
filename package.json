@@ -4,8 +4,9 @@
   "description": "",
   "main": "runner.js",
   "scripts": {
-    "dev": "nodemon --exec babel-node runner.js",
-    "debug": "MODE=development nodemon --exec babel-node --inspect runner.js"
+    "dev": "MODE=development nodemon --exec babel-node runner.js",
+    "debug": "MODE=development nodemon --exec babel-node --inspect runner.js",
+    "seed": "MODE=development npx babel-node ./node_modules/.bin/sequelize db:seed:all"
   },
   "keywords": [],
   "author": "Alex Poberezhnyi",
@@ -21,6 +22,7 @@
     "@babel/core": "^7.8.4",
     "@babel/node": "^7.8.4",
     "@babel/preset-env": "^7.8.4",
+    "nodemon": "^2.0.2",
     "uuid": "^3.4.0"
   }
 }
