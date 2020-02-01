@@ -1,4 +1,5 @@
 {
-	"apiPrefix" : "/api/v1/",
-	"port"		: "8080"
+	"apiPrefix"   : "/api/v1/",
+	"port"		  : "8080",
+	"logFileName" : "app.log"
 }
