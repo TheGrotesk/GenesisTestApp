@@ -6,15 +6,21 @@ module.exports = {
     return queryInterface.bulkInsert('Clients', [
       {
         id : uuid(),
-        name : 'Garold'
+        name : 'Garold',
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         id : uuid(),
-        name : 'Tony'
+        name : 'Tony',
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         id : uuid(),
-        name : 'Fin'
+        name : 'Fin',
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
     ]);
   },
