@@ -1,0 +1,307 @@
+{
+	"variables": [],
+	"info": {
+		"name": "GenesisTestApp",
+		"_postman_id": "ffe84e43-1b3c-9d0d-41f2-74e6d1d7d734",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Restaurants",
+			"description": "",
+			"item": [
+				{
+					"name": "Show",
+					"request": {
+						"url": "{{schema}}://{{domain}}:{{port}}/{{apiPrefix}}/restaurants/77c33894-83f3-464c-a398-5601f02115bf",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Index",
+					"request": {
+						"url": "{{schema}}://{{domain}}:{{port}}/{{apiPrefix}}/restaurants/",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"url": "{{schema}}://{{domain}}:{{port}}/{{apiPrefix}}/restaurants/11a8c26b-425a-4c5b-8e75-220a55fa1a96",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"url": "{{schema}}://{{domain}}:{{port}}/{{apiPrefix}}/restaurants/",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"data\": [\n\t\t{\n\t\t\t\"name\":\"McDonalds\"\n\t\t},\n\t\t{\n\t\t\t\"name\":\"Gaga\"\n\t\t}\n\t]\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"url": "{{schema}}://{{domain}}:{{port}}/{{apiPrefix}}/restaurants/85b4064c-ba5e-4460-b2f9-b270f9c073f5",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"fields\": {\n\t\t\"name\": \"Papa John's\"\n\t}\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Clients",
+			"description": "",
+			"item": [
+				{
+					"name": "Show",
+					"request": {
+						"url": "{{schema}}://{{domain}}:{{port}}/{{apiPrefix}}/clients/0297aafb-fce3-4357-a93a-eaa3737e0dbf",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Index",
+					"request": {
+						"url": "{{schema}}://{{domain}}:{{port}}/{{apiPrefix}}/clients/",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"url": "{{schema}}://{{domain}}:{{port}}/{{apiPrefix}}/clients/0297aafb-fce3-4357-a93a-eaa3737e0dbf",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"url": "{{schema}}://{{domain}}:{{port}}/{{apiPrefix}}/clients/",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"data\": [\n\t\t{\n\t\t\t\"name\":\"Tony\"\n\t\t},\n\t\t{\n\t\t\t\"name\":\"Margaret\"\n\t\t}\n\t]\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"url": "{{schema}}://{{domain}}:{{port}}/{{apiPrefix}}/clients/ba2d9105-1188-4c41-ab9f-87246a856479",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"fields\": {\n\t\t\"name\": \"Margaret Dians\"\n\t}\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Couriers",
+			"description": "",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"url": "{{schema}}://{{domain}}:{{port}}/{{apiPrefix}}/couriers/",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Index by restaurantId",
+					"request": {
+						"url": "{{schema}}://{{domain}}:{{port}}/{{apiPrefix}}/restaurants/e7063d11-241f-4877-8d18-481e8d525e0b/couriers/",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"request": {
+						"url": "{{schema}}://{{domain}}:{{port}}/{{apiPrefix}}/couriers/159b1a64-0f00-43cd-af2d-6eb088938258",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"url": "{{schema}}://{{domain}}:{{port}}/{{apiPrefix}}/couriers/",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"data\": [{\n\t\t\"name\": \"Ban\",\n\t\t\"restaurantId\": \"07259400-a4e0-4a55-b71c-57f05dbadc58\",\n\t\t\"availability\": \"AVAILABLE\"\n\t}]\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"url": "{{schema}}://{{domain}}:{{port}}/{{apiPrefix}}/couriers/138debef-e616-4ec4-88f1-c641641833a2",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"fields\": {\n\t\t\"name\": \"Jankins\",\n\t\t\"restaurantId\": \"07259400-a4e0-4a55-b71c-57f05dbadc58\",\n\t\t\"availability\": \"NOT_AVAILABLE\"\n\t}\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"url": "{{schema}}://{{domain}}:{{port}}/{{apiPrefix}}/couriers/78213e10-72bd-445e-b1bf-986a61669f48",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"description": "",
+			"item": [
+				{
+					"name": "Show",
+					"request": {
+						"url": "{{schema}}://{{domain}}:{{port}}/{{apiPrefix}}/orders/0297aafb-fce3-4357-a93a-eaa3737e0dbf",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Index",
+					"request": {
+						"url": "{{schema}}://{{domain}}:{{port}}/{{apiPrefix}}/orders/",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"url": "{{schema}}://{{domain}}:{{port}}/{{apiPrefix}}/orders/",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"data\": [\n\t\t{\n\t\t\t\"clientId\":\"deb36672-993b-4f17-a2e4-3844d388b99d\",\n\t\t\t\"restaurantId\": \"e7063d11-241f-4877-8d18-481e8d525e0b\",\n\t\t\t\"courierId\":\"f3812912-39c3-4fb4-ab17-4e3822ab395b\",\n\t\t\t\"deliveryAt\": \"2020-02-03T00:00:30+00:00\"\n\t\t}\n\t]\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
