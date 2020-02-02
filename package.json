@@ -12,6 +12,7 @@
   "author": "Alex Poberezhnyi",
   "license": "ISC",
   "dependencies": {
+    "@hapi/joi": "^17.1.0",
     "app-root-path": "^3.0.0",
     "express": "^4.17.1",
     "mysql2": "^2.1.0",
