@@ -33,4 +33,4 @@ Database Engine
 
 For API testing, project provide Postman collection and environment. 
 
-So you can easely import it to your Postman.
+So you can easily import it to your Postman.
