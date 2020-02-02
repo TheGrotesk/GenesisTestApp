@@ -5,7 +5,9 @@
   "main": "runner.js",
   "scripts": {
     "dev": "MODE=development nodemon --exec babel-node runner.js",
-    "debug": "MODE=development nodemon --exec babel-node --inspect runner.js"
+    "debug": "MODE=development nodemon --exec babel-node --inspect runner.js",
+    "migration": "MODE=development npx babel-node ./node_modules/.bin/sequelize db:migrate",
+    "seed": "MODE=development npx babel-node ./node_modules/.bin/sequelize db:seed:all"
   },
   "keywords": [],
   "author": "Alex Poberezhnyi",
