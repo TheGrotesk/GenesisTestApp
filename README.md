@@ -7,11 +7,11 @@ Database Engine
 ```
 
 **Installation**
-
+```
 - npm install
 - cp config/db.json.sample config/db.json
 - cp config/config.json.sample config/config.json
-
+```
 **Example app config**
 
 ```json
@@ -24,11 +24,11 @@ Database Engine
 	}
 }
 ```
-
+```
 - npm run migration
 - npm run seed
 - npm run dev
-
+```
 **Testing**
 
 For API testing, project provide Postman collection and environment. 
