@@ -1,4 +1,5 @@
 'use strict';
+import uuid from 'uuid';
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
@@ -7,7 +8,7 @@ module.exports = {
 				type 	     : Sequelize.UUID,
 				allowNull    : false,
 				primaryKey   : true,
-				defaultValue : Sequelize.UUIDV4
+				default : uuid()
 			},
 			name : {
 				type      : Sequelize.STRING,
@@ -24,7 +25,7 @@ module.exports = {
 			availability : {
 				type : Sequelize.ENUM(['AVAILABLE', 'NOT_AVAILABLE']),
 				allowNull : false,
-				defaultValue : 'AVAILABLE'
+				default : 'AVAILABLE'
 			},
 			createdAt: {
 				type: Sequelize.DATE, 

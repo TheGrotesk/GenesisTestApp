@@ -1,4 +1,6 @@
 'use strict';
+import uuid from 'uuid/v4';
+
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('Restaurants', {
@@ -6,7 +8,7 @@ module.exports = {
         type        : Sequelize.UUID,
         allowNull    : false,
         primaryKey   : true,
-        defaultValue : Sequelize.UUIDV4 
+        default : uuid()
       },
       name: {
         type      : Sequelize.STRING,
